@@ -1,0 +1,53 @@
+.btn
+	height: 48px
+	text-align: center
+	font-size: 16px
+	color: $blue
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	border-bottom: 2px solid #e89400
+	+g(#ffbd00 , #ffd200 40%)
+	+tr(.3s)
+	+tb
+	&:hover
+		+g(#fab121, #f7be37)
+	&:active
+		+g(#ffd24f, #f8dd63)
+
+.btn_blue
+	height: 19px
+	width: 60px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	margin-top: 8px
+	border-bottom: 1px solid #000
+	font-size: 12px
+	text-shadow: 0px 0px 1px rgba(51, 102, 204, 0.35);
+	color: #fff
+	+g(#4586f2, #629bfa)
+	&:hover
+		+g(#2a67cd, #548ae2)
+	&:active
+		+g(#699df2, #88b4fc)
+
+
+.btn_close
+	position: absolute
+	top: -15px
+	right: -15px
+	width: 31px
+	height: 31px
+	background-image: url("../img/icons/close.png")
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	z-index: 20
+	+tr(.2s)
+	&:hover
+		-webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, .3)
+		box-shadow: 0 0 0 3px rgba(255, 255, 255, .3)
+	&_yellow
+		@extend .btn_close
+		background-image: url("../img/icons/close_yel.png")
+		&:hover
+			-webkit-box-shadow: 0 0 0 3px rgba(247, 190, 55, .6)
+			box-shadow: 0 0 0 3px rgba(247, 190, 55, .6)

@@ -1,0 +1,285 @@
+.content
+	position: relative
+	width: 720px
+	float: left
+	+clr
+	.big__title
+		margin-top: 0
+.long__box
+	position: relative
+	width: 100%
+	margin-bottom: 20px
+	+clr
+	&:last-child
+		margin-bottom: 0
+	p
+		word-break: break-word
+.content__title
+	font-size: 18px
+	letter-spacing: 1px
+	color: #000
+	margin-bottom: 13px
+	+tb
+.img__post
+	width: 240px
+	height: 130px
+	margin-right: 20px
+	float: left
+.short__box
+	display: inline-block
+	width: 320px
+	margin: 15px 20px 20px 0
+	vertical-align: top
+	p
+		word-break: break-word
+	img
+		width: 320px
+		min-height: 180px
+		height: auto
+		vertical-align: top
+.half__box
+	display: inline-block
+	width: 375px
+	margin: 15px 0 20px 0
+	vertical-align: top
+	p
+		word-break: break-word
+	&:nth-child(odd)
+		margin-right: 0
+	img
+		width: 375px
+		min-height: 180px
+		height: auto
+
+.more
+	font-size: 14px
+	text-align: right
+	float: right
+	color: #39F
+	border-bottom: 1px solid #39F
+	&:hover
+		border-bottom: 1px solid $n
+
+.page
+	text-align: center
+	margin-top: 10px
+	a
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+		color: #666
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: #ccc
+			.icon_prev
+				opacity: 0.7
+	.is_active
+		color: #ccc
+.icon_prev
+	display: inline-block
+	background-image: url('../img/icons/icon_prev.png')
+	width: 10px
+	height: 13px
+	margin: 2px 10px 0 0
+.icon_next
+	@extend .icon_prev
+	background-image: url("../img/icons/icon_next.png")
+	margin: 2px 0 0 10px
+
+.gallery
+	.content__title
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 40px
+	&__img
+		display: block
+		float: left
+		margin: 0 20px 20px 0
+		vertical-align: top
+		&:last-child
+			margin-right: 0
+		img
+			width: 127px
+			height: 123px
+
+.problem
+	text-align: center
+	margin-top: 35px
+	p
+		font-size: 24px
+		color: #000
+	.btn
+		width: 240px
+.small_p
+	margin-top: 15px
+	p
+		font-size: 14px
+	.btn
+		margin-top: 15px
+
+.big__title
+	font-size: 24px
+	margin: 20px 0
+	color: #000
+	text-align: center
+	+tb
+
+//diplom
+
+.diplom
+	margin: 30px 0 15px
+	a
+		display: inline-block
+		min-width: 148px
+		padding: 0 10px
+		text-align: center
+		vertical-align: top
+		line-height: 33px
+		background-color: #DAECFF
+		border: 2px solid #84c1ff
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		color: #333
+		+box
+		&:last-child
+			margin-right: 0
+		&:hover
+			background-color: #BACEFE
+.diplom_long
+	margin: 115px 0 65px
+	a
+		margin: 0 15px 15px
+		display: inline-block
+		min-width: 148px
+		padding: 0 10px
+		text-align: center
+		vertical-align: top
+		line-height: 33px
+		background-color: #DAECFF
+		border: 2px solid #84c1ff
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		color: #333
+		&:last-child
+			margin-right: 0
+		&:hover
+			background-color: #BACEFE
+.diplom_justify
+	text-align: justify
+	+justify
+	a
+		display: inline-block
+		min-width: 148px
+		padding: 0 10px
+		margin-bottom: 15px
+		font-size: 14px
+		text-align: center
+		vertical-align: top
+		line-height: 33px
+		background-color: #DAECFF
+		border: 2px solid #84c1ff
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		color: #333
+		&:last-child
+			margin-right: 0
+		&:hover
+			background-color: #BACEFE
+.diplom_center
+	text-align: center
+	a
+		margin: 0 25px 15px 15px
+
+
+//contact.html
+.mapin
+	position: relative
+	height: 410px
+	overflow: hidden
+	padding: 1px
+	+clr
+	#map
+		position: absolute
+		z-index: 1
+.contant__contact
+	position: relative
+	margin: 24px 0 0
+	+clr
+	&_tel
+		float: left
+		position: relative
+		text-align: center
+		width: 160px
+		.logo
+			float: none
+			img
+				margin: 0 auto
+	.contact__tel
+		i
+			margin-top: 0
+		a
+			font-size: 14px
+
+.contact__form
+	float: right
+	width: 540px
+	height: 326px
+	background-color: $blue
+	padding: 25px 15px 20px
+	+box
+	input
+		width: 157px
+		height: 37px
+		margin-right: 15px
+		padding: 0 5px
+		&:hover
+			box-shadow: inset 0 0 0 2px #ccc
+		&:last-child
+			margin-right: 0
+		+placeholder
+			color: $blue
+			font-size: 14px
+			color: #333
+			+t
+	textarea
+		width: 100%
+		height: 170px
+		margin: 10px 0 15px
+		padding: 5px
+		border: none
+		resize: none
+		&:hover
+			box-shadow: inset 0 0 0 2px #ccc
+		+placeholder
+			color: $blue
+			font-size: 14px
+			color: #333
+			+t
+	.btn
+		width: 211px
+		float: right
+
+.contact__form_theme
+	margin: 0 !important
+
+//buy
+
+.buy
+	width: 300px
+	display: inline-block
+	margin-right: 75px
+	vertical-align: top
+	margin-bottom: 5px
+	&:nth-child(even)
+		margin-right: 0
+	img
+		width: 300px
+		height: 95px
+		margin-bottom: 15px
+		vertical-align: top
+	p
+		float: left
+		font-size: 12px
+		color: $blue
+		margin-bottom: 10px

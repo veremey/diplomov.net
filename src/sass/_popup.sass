@@ -1,0 +1,133 @@
+.js_popup
+	+coverdiv
+	position: fixed
+	background-color: rgba(0, 0, 0, .7)
+	display: none
+	z-index: 1000
+	&.is_active
+		display: block
+.js_popup_wrap
+	+vcenter
+	position: fixed//?
+	display: none
+	z-index: 1100
+.popup_title
+	font-size: 20px
+	color: $blue
+	margin-bottom: 30px
+.popup_title_small
+	font-size: 18px
+	color: $blue
+	margin-bottom: 15px
+	dt
+		font-size: 18px
+		color: $blue
+		margin-bottom: 20px
+	dd
+		display: inline-block
+		width: 120px
+		margin-right: 35px
+		vertical-align: top
+		margin-bottom: 20px
+		&:nth-of-type(4n)
+			margin-right: 0
+		&:nth-of-type(4n+1)
+			margin-left: 65px
+		a
+			font-size: 14px
+			color: #333
+			border-bottom: 1px solid #333
+			&:hover
+				border-bottom: 1px solid $n
+.my_town
+	margin-top: 15px
+	input
+		width: 505px
+		float: left
+		margin: 0
+		font-size: 18px
+		vertical-align: top
+		height: 45px
+		background-color: #e3e3e1
+		border: 1px solid #ccc
+		padding: 0 15px
+		-webkit-border-radius: 5px 0 0 5px
+		border-radius: 5px 0 0 5px
+	.btn_blue
+		width: 180px
+		height: 45px
+		font-size: 18px
+		vertical-align: top
+		margin: 0 0 0 -3px
+.all_town
+	width: 780px
+	height: 365px
+	border: 2px solid #000
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	background-color: #FFF
+	padding: 25px 60px 25px 25px
+	+box
+
+.senks
+	width: 500px
+	height: 415px
+	border: 2px solid #000
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	background-color: #FFF
+	padding: 70px 20px 50px
+	text-align: center
+	+box
+	&.is_active
+		display: block
+.big__title_popup
+	font-size: 24px
+	color: $blue
+	margin-bottom: 30px
+	+tb
+	+ p
+		font-size: 24px
+		color: #666
+.popup_img
+	margin-top: 60px
+.js_popup_form
+	width: 500px
+	height: 530px
+.popup__form
+	width: 100%
+	height: 100%
+	background-color: #ccc
+	padding: 20px
+	+box
+	&_name,
+	&_tel,
+	&_area
+		margin-bottom: 20px
+		label
+			display: block
+			margin-bottom: 5px
+			font-size: 24px
+			color: #333
+		input,
+		textarea
+			width: 100%
+			height: 58px
+			border: 1px solid $n
+			-webkit-border-radius: 5px
+			border-radius: 5px
+			padding: 0 20px
+			font-size: 20px
+			background-color: #F7F6F6
+		textarea
+			resize: none
+			height: 120px
+			padding: 15px 20px
+	.btn
+		width: 100%
+		height: 73px
+		font-size: 30px
+		+tb
+
+.has-open-popup
+	display: block
