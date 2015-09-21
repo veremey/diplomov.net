@@ -66,12 +66,15 @@ a
 		height: 40px
 	&_text
 		font-size: 12px
-		margin-top: 5px
+		margin-top: 2px
 .big_title
 	position: absolute
 	top: 50%
 	left: 100px
 	transform: translate(0%,-50%)
+	h2
+		font-size: 22px
+		+tb
 .question__call_me
 	color: $gold
 .contact__tel
@@ -134,7 +137,6 @@ a
 	top: 30px
 	right: 0
 	width: 160px
-	height: 80px
 	text-align: center
 	background-color: #FFF
 	padding: 13px 5px
@@ -231,8 +233,10 @@ a
 	+clr
 	.logo
 		margin-top: 10px
-	.big_title h2
-		font-size: 20px
+	.big_title
+		left: 127px
+		h2
+			font-size: 20px
 	&__left
 		position: relative
 		float: left
@@ -241,6 +245,7 @@ a
 	.top_right
 		width: 184px
 		font-size: 12px
+		margin-top: 12px
 	.contact__tel
 		position: relative
 		+clr
