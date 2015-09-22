@@ -45,8 +45,8 @@
 						</p>
 						<div class="town_window">
 							<p>Ваш город – <span>Москва</span> Угадали?</p>
-							<button class="btn_blue js_close_town_window">да</button>
-							<button class="btn_blue js_alltown_window_open">нет</button>
+							<button type="submit" class="btn_blue js_close_town_window">да</button>
+							<button type="submit" class="btn_blue js_alltown_window_open">нет</button>
 						</div>
 		
 					</div>
@@ -55,13 +55,13 @@
 			<ul class="header__menu">
 				<li><a href="#">Главная</a></li>
 				<li class="has_child"><a href="#">Дипломы</a>
-					<ul class="sub__menu">
+		<!-- 			<ul class="sub__menu">
 						<li><a href="#">Аттестаты</a></li>
 						<li><a href="#">Удостоверения</a></li>
 						<li><a href="#">Свидетельства</a></li>
 						<li><a href="#">Справки</a></li>
 						<li><a href="#">Контакты</a></li>
-					</ul>
+					</ul> -->
 					</li>
 				<li><a href="#">Аттестаты</a></li>
 				<li><a href="#">Удостоверения</a></li>
@@ -69,7 +69,7 @@
 				<li><a href="#">Справки</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<button class="btn js_take_form">получить консультацию</button>
+			<button type="submit" class="btn js_take_form">получить консультацию</button>
 		</div>
 	</div>
 	<!-- end l_container -->
@@ -129,7 +129,7 @@
 			<div class="problem">
 				<p>Остались вопросы или не нашли свой документ?</p>
 				<h4 class="big__title">Оставьте заявку и мы свяжемся с Вами для уточнения</h4>
-				<button class="btn js_take_form">получить консультацию</button>
+				<button type="submit" class="btn js_take_form">получить консультацию</button>
 			</div>
 		</div>
 		<!-- end contant-->
@@ -157,17 +157,17 @@
 			<form action="" class="side__form">
 				<div class="side__form_name">
 					<label for="name">Имя:</label>
-					<input type="text" name="name" id="" placeholder="Введите ваше имя">
+					<input required type="text" name="name" id="" placeholder="Введите ваше имя">
 				</div>
 				<div class="side__form_tel">
 					<label for="tel">Телефон:</label>
-					<input type="text" name="tel" id="" placeholder="Контактный номер">
+					<input required type="text" name="tel" id="" placeholder="Контактный номер">
 				</div>
 				<div class="side__form_area">
 					<label for="area">Комментарий:</label>
 					<textarea name="area" placeholder='Ваш комментарий'></textarea>
 				</div>
-				<button class="btn">купить</button>
+				<button type="submit" class="btn">купить</button>
 			</form>
 			<img src="../img/vjt.png" alt="">
 		</div>
@@ -204,7 +204,7 @@
 					<a href="#">Екатеринбург</a>
 				</p>
 			</div>
-			<button class="btn">заказать звонок</button>
+			<button type="submit" class="btn">заказать звонок</button>
 		</div>
 	</div>
 </div>
@@ -229,8 +229,8 @@
 	</dl>
 	<h4 class="popup_title_small">Или укажите в поле:</h4>
 	<form action="" class="my_town">
-		<input type="text" name=""  id="">
-		<button class="btn_blue">Это мой город!</button>
+		<input required type="text" name=""  id="">
+		<button type="submit" class="btn_blue">Это мой город!</button>
 	</form>
 </div>
 
@@ -239,17 +239,17 @@
 	<form action="" class="popup__form">
 		<div class="popup__form_name">
 			<label for="name">Имя:</label>
-			<input type="text" name="name" id="" placeholder="Введите ваше имя">
+			<input required type="text" name="name" id="" placeholder="Введите ваше имя">
 		</div>
 		<div class="popup__form_tel">
 			<label for="tel">Телефон:</label>
-			<input type="text" name="tel" id="" placeholder="Контактный номер">
+			<input required type="text" name="tel" id="" placeholder="Контактный номер">
 		</div>
 		<div class="popup__form_area">
 			<label for="area">Комментарий:</label>
 			<textarea name="area" placeholder='Ваш комментарий'></textarea>
 		</div>
-		<button class="btn">получить консультацию</button>
+		<button type="submit" class="btn">получить консультацию</button>
 	</form>
 </div>
 

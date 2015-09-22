@@ -15,39 +15,51 @@
 	font-size: 20px
 	color: $blue
 	margin-bottom: 30px
+.row__justfy
+	+justify
+	margin-left: 35px
+	margin-bottom: 20px
+	a
+		display: inline-block
+		max-width: 120px
+		width: 120px
+		line-height: 14px
+		margin: 0!important
+
 .popup_title_small
 	font-size: 18px
 	color: $blue
-	margin-bottom: 15px
-	dt
+	margin-bottom: 10px
+	h6
 		font-size: 18px
 		color: $blue
 		margin-bottom: 20px
-	dd
+	a
 		display: inline-block
-		width: 120px
-		margin-right: 35px
-		vertical-align: top
+		width: 129px
+		font-size: 14px
+		text-decoration: underline
+		color: #333
 		margin-bottom: 20px
-		&:nth-of-type(4n)
-			margin-right: 0
-		&:nth-of-type(4n+1)
-			margin-left: 65px
-		a
-			font-size: 14px
-			color: #333
-			border-bottom: 1px solid #333
-			&:hover
-				border-bottom: 1px solid $n
+		&:hover
+			text-decoration: none
+		// margin-right: 35px
+		// margin-bottom: 20px
+		&:first-child
+			margin-left: 35px
+		// &:nth-of-type(4n)
+		// 	margin-right: 0
+		&:nth-of-type(6n+1)
+			margin-left: 35px
 .my_town
-	margin-top: 15px
+	margin-top: 18px
 	input
 		width: 505px
 		float: left
 		margin: 0
 		font-size: 18px
 		vertical-align: top
-		height: 45px
+		height: 43px
 		background-color: #e3e3e1
 		border: 1px solid #ccc
 		padding: 0 15px
@@ -58,10 +70,10 @@
 		height: 45px
 		font-size: 18px
 		vertical-align: top
-		margin: 0 0 0 -3px
+		margin: -1px 0 0 -3px
 .all_town
 	width: 780px
-	height: 365px
+	// height: 365px
 	border: 2px solid #000
 	-webkit-border-radius: 3px
 	border-radius: 3px
@@ -71,7 +83,7 @@
 
 .senks
 	width: 500px
-	height: 415px
+	// height: 415px
 	border: 2px solid #000
 	-webkit-border-radius: 3px
 	border-radius: 3px
@@ -93,11 +105,11 @@
 	margin-top: 60px
 .js_popup_form
 	width: 500px
-	height: 530px
+	// height: 530px
 .popup__form
 	width: 100%
 	height: 100%
-	background-color: #ccc
+	background-color: #fff
 	padding: 20px
 	+box
 	&_name,
@@ -113,12 +125,12 @@
 		textarea
 			width: 100%
 			height: 58px
-			border: 1px solid $n
 			-webkit-border-radius: 5px
 			border-radius: 5px
 			padding: 0 20px
 			font-size: 20px
-			background-color: #F7F6F6
+			background-color: #f7f6f6
+			border: 1px solid #E1DFDF
 		textarea
 			resize: none
 			height: 120px
